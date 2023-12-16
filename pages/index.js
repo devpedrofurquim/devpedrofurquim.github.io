@@ -85,9 +85,9 @@ const Page = () => {
             About
           </Heading>
           <Bio>
-            I&apos; Pedro, a 23-year-old Brazilian Software Developer pursuing a Bachelor&apos;s degree in Computer Engineering. 
+            I&apos;m Pedro, a 23-year-old Brazilian Software Developer pursuing a Bachelor&apos;s degree in Computer Engineering. 
             You&apos;ll often find me live coding on {' '} <Link as={NextLink} target='_blank' href="https://www.twitch.tv/pedrofurquimdev">Twitch TV</Link>, 
-            building digital products on {' '}<Link as={NextLink} target='_blank' href="https://github.com/devpedrofurquim">Github</Link>, or teaching coding related subjects{' '}
+            building digital products on {' '}<Link as={NextLink} target='_blank' href="https://github.com/devpedrofurquim">D281</Link> (Software House), or teaching coding related subjects{' '}
             <Link as={NextLink} href="/courses">Courses.</Link> {' '}
             Let&apos;s connect and create some coding magic together! {' '}
           </Bio>
@@ -120,7 +120,7 @@ const Page = () => {
             <StoryYear>
               2023
             </StoryYear>
-            Enrolled in a Computer Engineering bachelor&apos;s program at <Link as={NextLink} target='_blank' href="https://uniso.br/home">@Uniso University.</Link>
+            Enrolled in a Computer Engineering bachelor&apos;s program at <Link as={NextLink} target='_blank' href="https://uniso.br/home">@Uniso University</Link> and founded <Link as={NextLink} target='_blank' href="https://d281.com.br/">D281</Link> (Software House).
           </StorySection>
       </Section>
       <Section delay={0.3}>
