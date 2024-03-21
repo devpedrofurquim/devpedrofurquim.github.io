@@ -9,13 +9,12 @@ const Work = () => {
         <Layout title="Rangu">
             <Container>
             <Title>
-                Rangu <Tag>2023 - In progress</Tag>
+                Rangu <Tag>2023</Tag>
             </Title>
             <Bio>
                 A recipes web application developed with new technologies 
                 where users can navigate and search through a vast repository of 
                 thousands of receipts. It consumes data from the Spoonacular API.
-                Still a work in progress.
             </Bio>
             <List ml={4} my={4} gap={2} display="flex" flexDirection="column">
                     <ListItem>

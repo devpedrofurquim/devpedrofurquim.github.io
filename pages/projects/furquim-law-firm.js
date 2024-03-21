@@ -5,12 +5,12 @@ import Bio from '../../components/bio';
 import Layout from '../../components/layouts/article';
 
 
-const Work = () => {
+const Project = () => {
     return (
         <Layout title="Furquim Law Firm">
             <Container>
                 <Title>
-                    Furquim Law Firm <Tag>2022-</Tag>
+                    Furquim Law Firm <Tag>2022</Tag>
                 </Title>
                 <Bio>
                 A institutional website developed for Furquim Law Firm with on-demand technologies, SEO optimization, and Google Analytics. The website not only reflects the firm&apos;s prominence but also ensures a user-friendly experience.
@@ -36,4 +36,4 @@ const Work = () => {
     )
 }
 
-export default Work
+export default Project

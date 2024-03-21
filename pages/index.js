@@ -48,7 +48,7 @@ const Page = () => {
         )}
         fontFamily={theme.fonts.fontFamily}
       >
-        I&apos;m Pedro, a brazilian software developer!
+        I&apos;m Pedro, a brazilian Computer Engineering student!
       </Box>
       <Box display='flex' flexDirection={{base: 'column', md: 'row'}}>
       <Box flexShrink={0} mt={{base: 4, md: 0}} mr={{md: 6}} align="center" order={{ base: 2, md: 1 }}>
@@ -76,7 +76,7 @@ const Page = () => {
             Pedro Furquim
           </Heading>
           <p>
-            Software Developer ( Front-end / Back-end / Blockchain )
+            ( Software Engineer & Game Developer )
           </p>
         </Box>
       </Box>
@@ -85,18 +85,16 @@ const Page = () => {
             About
           </Heading>
           <Bio>
-            I&apos;m Pedro, a 23-year-old Brazilian Software Developer pursuing a Bachelor&apos;s degree in Computer Engineering. 
-            You&apos;ll often find me live coding on {' '} <Link as={NextLink} target='_blank' href="https://www.twitch.tv/pedrofurquimdev">Twitch TV</Link>, 
-            building digital products on {' '}<Link as={NextLink} target='_blank' href="https://github.com/devpedrofurquim">D281</Link> (Software House), or teaching coding related subjects{' '}
-            <Link as={NextLink} href="/courses">Courses.</Link> {' '}
-            Let&apos;s connect and create some coding magic together! {' '}
+          Hey there, I&apos;m Pedro, a 24-year-old Brazilian Software Engineer pursuing a Bachelor&apos;s degree in Computer Engineering. You can find me on {''}<Link as={NextLink} target='_blank' href="https://github.com/devpedrofurquim">Github</Link> or {''}<Link as={NextLink} target='_blank' href="https://www.youtube.com/channel/UCJZ720iUOA2f9HstAxIlLug">Youtube</Link>, 
+          where I make videos about Programming and Game Development. Beyond programming, I enjoy Mathematics, Books and Classical Music. Let&apos;s connect and embark on some coding adventures together!
+           
           </Bio>
           <Box align="center" my={4} gap={3} display="flex" justifyContent="center" flexDirection={{base: 'column', md: 'row'}}>
             <Link as={NextLink} href='https://www.linkedin.com/in/pedro-furquim-dev/' target='_blank'>
               <Button leftIcon={<FaLinkedin/>} rightIcon={<ChevronRightIcon/>} colorScheme='blue'>My Linkedin</Button>
             </Link>
-            <Link as={NextLink} href='/works'>
-              <Button  leftIcon={<FaCode/>} rightIcon={<ChevronRightIcon/>} colorScheme='blue'>My Portfolio</Button>
+            <Link as={NextLink} href='/projects'>
+              <Button  leftIcon={<FaCode/>} rightIcon={<ChevronRightIcon/>} colorScheme='blue'>My Projects</Button>
             </Link>
           </Box>
       </Section>
@@ -118,9 +116,15 @@ const Page = () => {
           </StorySection>
           <StorySection>
             <StoryYear>
+              2022
+            </StoryYear>
+            Finished <Link as={NextLink} target='_blank' href="https://certificates.cs50.io/2fd2f3f3-22c4-4b2a-8ab6-f8ee075ef758.pdf?size=letter">@CS50</Link> course from Harvard
+          </StorySection>
+          <StorySection>
+            <StoryYear>
               2023
             </StoryYear>
-            Enrolled in a Computer Engineering bachelor&apos;s program at <Link as={NextLink} target='_blank' href="https://uniso.br/home">@Uniso University</Link> and founded <Link as={NextLink} target='_blank' href="https://d281.com.br/">D281</Link> (Software House).
+            Enrolled in a Computer Engineering bachelor&apos;s program at <Link as={NextLink} target='_blank' href="https://uniso.br/home">@Uniso University</Link>.
           </StorySection>
       </Section>
       <Section delay={0.3}>
@@ -128,7 +132,7 @@ const Page = () => {
           Tech Stack
           </Heading>
           <Bio>
-          JavaScript, React, Typescript, Next, Tailwind, Chakra UI, CSS / SASS, Nest, Node, Express, Python, Flask, Django, Fast API, C#, .NET
+          JavaScript, Typescript, React, Next, Java, Spring Boot, Tailwind, Chakra UI, CSS / SASS
           </Bio>
       </Section>
       <Section delay={0.3}>
@@ -147,7 +151,7 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem mb={2}>
-              <Link href='https://www.instagram.com/pedroo.tsx/' target='_blank'>
+              <Link href='https://www.instagram.com/pedro.furquim/' target='_blank'>
                 <Button variant="ghost" colorScheme='blue' leftIcon={<IoLogoInstagram/>}>@pedrofurquim</Button>
               </Link>
             </ListItem>

@@ -6,8 +6,8 @@ import theme from '../libs/theme'
 
 export const Title = ({ children }) => (
   <Box>
-    <Link as={NextLink} href="/works" fontFamily={theme.fonts.fontFamily} fontWeight={300}>
-      Works
+    <Link as={NextLink} href="/projects" fontFamily={theme.fonts.fontFamily} fontWeight={300}>
+      Projects
     </Link>
     <span>
       {' '}

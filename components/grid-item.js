@@ -50,7 +50,7 @@ export const GridItem = ({
 
 export const WorkGridItem = ({
   children,
-  category = 'works',
+  category = 'projects',
   id,
   title,
   thumbnail,
