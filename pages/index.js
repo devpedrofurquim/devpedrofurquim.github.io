@@ -22,7 +22,6 @@ import { FaCode } from "react-icons/fa6";
 import {StorySection, StoryYear} from '../components/story'
 import {
   IoLogoTwitter,
-  IoLogoInstagram,
   IoLogoGithub,
   IoLogoLinkedin
 } from 'react-icons/io5'
@@ -48,7 +47,7 @@ const Page = () => {
         )}
         fontFamily={theme.fonts.fontFamily}
       >
-        I&apos;m Pedro, a brazilian Computer Engineering student!
+        I&apos;m Pedro, a brazilian Frontend Developer!
       </Box>
       <Box display='flex' flexDirection={{base: 'column', md: 'row'}}>
       <Box flexShrink={0} mt={{base: 4, md: 0}} mr={{md: 6}} align="center" order={{ base: 2, md: 1 }}>
@@ -76,7 +75,7 @@ const Page = () => {
             Pedro Furquim
           </Heading>
           <p>
-            ( Software Engineer & Game Developer )
+            ( React Developer / Typescript Developer )
           </p>
         </Box>
       </Box>
@@ -85,8 +84,8 @@ const Page = () => {
             About
           </Heading>
           <Bio>
-          Hey there, I&apos;m Pedro, a 24-year-old Brazilian Software Engineer pursuing a Bachelor&apos;s degree in Computer Engineering. You can find me on {''}<Link as={NextLink} target='_blank' href="https://github.com/devpedrofurquim">Github</Link> or {''}<Link as={NextLink} target='_blank' href="https://www.youtube.com/channel/UCJZ720iUOA2f9HstAxIlLug">Youtube</Link>, 
-          where I make videos about Programming and Game Development. Beyond programming, I enjoy Mathematics, Books and Classical Music. Let&apos;s connect and embark on some coding adventures together!
+          Hey there, I&apos;m Pedro, a 24-year-old Brazilian Frontend Developer pursuing a Bachelor&apos;s degree in Computer Engineering. You can find me on {''}<Link as={NextLink} target='_blank' href="https://github.com/devpedrofurquim">Github</Link> or {''}<Link as={NextLink} target='_blank' href="https://www.youtube.com/channel/UCJZ720iUOA2f9HstAxIlLug">Youtube</Link>, 
+          where I make videos about Software Development. Beyond coding, I enjoy Mathematics, Books and Classical Music. Let&apos;s connect and embark on some coding adventures together!
            
           </Bio>
           <Box align="center" my={4} gap={3} display="flex" justifyContent="center" flexDirection={{base: 'column', md: 'row'}}>
@@ -132,7 +131,7 @@ const Page = () => {
           Tech Stack
           </Heading>
           <Bio>
-          JavaScript, Typescript, React, Next, Java, Spring Boot, Tailwind, Chakra UI, CSS / SASS
+          JavaScript, Typescript, React, Next, Node, Express, Tailwind, Chakra UI, CSS / SASS
           </Bio>
       </Section>
       <Section delay={0.3}>
@@ -148,11 +147,6 @@ const Page = () => {
             <ListItem mb={2}>
               <Link href='https://twitter.com/devpedrofurquim' target='_blank'>
                 <Button variant="ghost" colorScheme='blue' leftIcon={<IoLogoTwitter/>}>@pedrofurquim</Button>
-              </Link>
-            </ListItem>
-            <ListItem mb={2}>
-              <Link href='https://www.instagram.com/pedro.furquim/' target='_blank'>
-                <Button variant="ghost" colorScheme='blue' leftIcon={<IoLogoInstagram/>}>@pedrofurquim</Button>
               </Link>
             </ListItem>
             <ListItem mb={2}>
