@@ -29,8 +29,9 @@ const Work = () => {
                         <Meta>Github Repository</Meta>
                         <Link href='https://github.com/devpedrofurquim/rangu-app' target='_blank'>Source Code<ExternalLinkIcon mx="2px"/></Link>
                     </ListItem>
-                    <WorkImage src={"../../rangu.png"} alt={'Furquim'}/>
-                    <WorkImage src={"../../rangu-02.png"} alt={'Furquim'}/>
+                    <WorkImage src={"../../rangu.png"} alt={'Rangu'}/>
+                    <WorkImage src={"../../rangu-02.png"} alt={'Rangu'}/>
+                    <WorkImage src={"../../rangu-3.png"} alt={'Rangu'}/>
                 </List>
             </Container>
         </Layout>

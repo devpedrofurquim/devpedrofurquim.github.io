@@ -24,10 +24,6 @@ const Project = () => {
                         <Meta>Stack</Meta>
                         <span>Html, Css, Bootstrap, JavaScript</span>
                     </ListItem>
-                    <ListItem>
-                        <Meta>Github Repository</Meta>
-                        <Link href='https://github.com/devpedrofurquim/law_firm_website' target='_blank'>Source Code<ExternalLinkIcon mx="2px"/></Link>
-                    </ListItem>
                 </List>
                 <WorkImage src={"../../furquimadv.png"} alt={'Furquim'}/>
                 <WorkImage src={"../../furquimadv-02.png"} alt={'Furquim'}/>
