@@ -10,6 +10,7 @@ import Evogym from '../public/evogym-1.png';
 import Netflix from '../public/netflix-1.png';
 import Hangman from '../public/hangman-1.png';
 import Movieland from '../public/movieland-1.png';
+import D281 from '../public/d281-3.png';
 
 const Projects = () => {
     return (
@@ -20,6 +21,11 @@ const Projects = () => {
             </Heading>
             
             <SimpleGrid columns={[1,1,2]} gap={6}>
+            <Section>
+                    <WorkGridItem id="d281" title="D281" thumbnail={D281} stack={['NextJS', 'TypeScript', 'Tailwind']}>
+                    A fullstack website developed for a brazilian software house.
+                    </WorkGridItem>
+                </Section>
                 <Section>
                     <WorkGridItem id="furquim-law-firm" title="Furquim Law Firm" thumbnail={furquimAdvPic} stack={['Html', 'Bootstrap', 'Javascript']}>
                     A institutional website developed for a prominent Brazilian law firm.

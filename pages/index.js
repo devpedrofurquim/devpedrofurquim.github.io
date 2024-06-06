@@ -132,7 +132,7 @@ const Page = () => {
           Tech Stack
           </Heading>
           <Bio>
-          JavaScript, Typescript, React, Next, Node, Express, Tailwind, Chakra UI, CSS / SASS, Godot Engine
+          JavaScript, Typescript, React, Next, Node, Express, Tailwind, Chakra UI, CSS / SASS, Godot Engine, .NET, Python, SQL
           </Bio>
       </Section>
       <Section delay={0.3}>
