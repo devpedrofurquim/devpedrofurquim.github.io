@@ -12,7 +12,7 @@ import Hangman from '../public/hangman-1.png';
 import Movieland from '../public/movieland-1.png';
 import D281 from '../public/d281-3.png';
 import Moonshiner from '../public/moonshiner-1.png'
-import BookFinder from '../public/books-finder-1.png'
+import BookFinder from '../public/book-finder-1.png'
 
 const Projects = () => {
     return (

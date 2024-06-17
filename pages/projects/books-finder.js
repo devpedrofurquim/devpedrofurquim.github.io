@@ -25,9 +25,8 @@ const Project = () => {
                         <Link href='https://github.com/devpedrofurquim/books-finder' target='_blank'>Source Code<ExternalLinkIcon mx="2px"/></Link>
                     </ListItem>
                 </List>
-                <WorkImage src={"../../books-finder-4.png"} alt={'D281'}/>
-                <WorkImage src={"../../books-finder-3.png"} alt={'D281'}/>
-                <WorkImage src={"../../books-finder-2.png"} alt={'D281'}/>
+                <WorkImage src={"../../book-finder-3.png"} alt={'D281'}/>
+                <WorkImage src={"../../book-finder-2.png"} alt={'D281'}/>
             </Container>
         </Layout>
     )
