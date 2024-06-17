@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image'
 import theme from '../libs/theme'
-import pedroImage from '../public/pedro2.jpg'
+import pedroImage from '../public/pedro-3.jpg'
 import Section from '../components/section'
 import Bio from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -47,7 +47,7 @@ const Page = () => {
         )}
         fontFamily={theme.fonts.fontFamily}
       >
-        I&apos;m Pedro, a brazilian Software Developer!
+        I&apos;m Pedro, a brazilian software developer!
       </Box>
       <Box display='flex' flexDirection={{base: 'column', md: 'row'}}>
       <Box flexShrink={0} mt={{base: 4, md: 0}} mr={{md: 6}} align="center" order={{ base: 2, md: 1 }}>
@@ -75,7 +75,7 @@ const Page = () => {
             Pedro Furquim
           </Heading>
           <p>
-            ( Fullstack Developer / Game Developer / Designer )
+            ( Fullstack Software Developer )
           </p>
         </Box>
       </Box>
@@ -132,7 +132,7 @@ const Page = () => {
           Tech Stack
           </Heading>
           <Bio>
-          JavaScript, Typescript, React, Next, Node, Express, Tailwind, Chakra UI, CSS / SASS, Godot Engine, .NET, Python, SQL
+          JavaScript, Typescript, React, React-Native, Next, Node, Express, Jest, Cypress, Tailwind, Chakra UI, CSS / SASS, Flutter, Godot Engine, .NET, Python, SQL
           </Bio>
       </Section>
       <Section delay={0.3}>

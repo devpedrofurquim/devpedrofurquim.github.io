@@ -11,6 +11,8 @@ import Netflix from '../public/netflix-1.png';
 import Hangman from '../public/hangman-1.png';
 import Movieland from '../public/movieland-1.png';
 import D281 from '../public/d281-3.png';
+import Moonshiner from '../public/moonshiner-1.png'
+import BookFinder from '../public/books-finder-1.png'
 
 const Projects = () => {
     return (
@@ -39,6 +41,16 @@ const Projects = () => {
             </Heading>
             
             <SimpleGrid columns={[1,1,2]} gap={6}>
+                <Section>
+                    <WorkGridItem id="books-finder" title="Books Finder" thumbnail={BookFinder} stack={["React Native"]}>
+                    A React Native application that enables users to sign in, search for books using titles, authors, or genres.
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem id="moonshiner" title="Moonshiner" thumbnail={Moonshiner} stack={["Flutter", "Flame"]}>
+                    A 2D pixel art game developed with Flutter and the Flame Engine.
+                    </WorkGridItem>
+                </Section>
                 <Section>
                     <WorkGridItem id="evogym" title="Evogym" thumbnail={Evogym} stack={["Typescript", "Next.JS", "Tailwind"]}>
                     A landing page website developed for a Evolutionary Fitness company.
