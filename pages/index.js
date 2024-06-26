@@ -47,7 +47,7 @@ const Page = () => {
         )}
         fontFamily={theme.fonts.fontFamily}
       >
-        I&apos;m Pedro, a brazilian software developer!
+        I&apos;m Pedro, welcome to my portfolio!
       </Box>
       <Box display='flex' flexDirection={{base: 'column', md: 'row'}}>
       <Box flexShrink={0} mt={{base: 4, md: 0}} mr={{md: 6}} align="center" order={{ base: 2, md: 1 }}>
@@ -75,7 +75,7 @@ const Page = () => {
             Pedro Furquim
           </Heading>
           <p>
-            ( Fullstack Software Developer )
+            ( Web & Mobile Enginner )
           </p>
         </Box>
       </Box>
@@ -84,9 +84,9 @@ const Page = () => {
             About
           </Heading>
           <Bio>
-          Hey there, I&apos;m Pedro, a 24-year-old Brazilian Software Developer pursuing a Bachelor&apos;s degree in Computer Engineering. 
+          Hey there, I&apos;m Pedro, a 24-year-old Brazilian Web & Mobile enginner pursuing a Bachelor&apos;s degree in Computer Engineering. 
           You can find me on {''}<Link as={NextLink} target='_blank' href="https://github.com/devpedrofurquim">Github</Link> or {''}<Link as={NextLink} target='_blank' href="https://www.youtube.com/channel/UCJZ720iUOA2f9HstAxIlLug">Youtube</Link>, 
-          where I make videos about Software and Game Development. Beyond coding, I enjoy Mathematics, Books and Classical Music. Let&apos;s connect and embark on some coding adventures together!
+          where I make videos about Software and Game Development. Beyond coding, I enjoy Mathematics, Books and Country Music. Let&apos;s connect and embark on some coding adventures together!
            
           </Bio>
           <Box align="center" my={4} gap={3} display="flex" justifyContent="center" flexDirection={{base: 'column', md: 'row'}}>
@@ -104,18 +104,6 @@ const Page = () => {
           </Heading>
           <StorySection>
             <StoryYear>
-              2000
-            </StoryYear>
-            Born in Sorocaba, Brazil.
-          </StorySection>
-          <StorySection>
-            <StoryYear>
-              2021
-            </StoryYear>
-            Started my coding journey by developing small indie games with C# on the Unity plataform and fell in love with programming.
-          </StorySection>
-          <StorySection>
-            <StoryYear>
               2022
             </StoryYear>
             Finished <Link as={NextLink} target='_blank' href="https://certificates.cs50.io/2fd2f3f3-22c4-4b2a-8ab6-f8ee075ef758.pdf?size=letter">@CS50</Link> course from Harvard.
@@ -124,7 +112,7 @@ const Page = () => {
             <StoryYear>
               2023
             </StoryYear>
-            Enrolled in a Computer Engineering bachelor&apos;s program at <Link as={NextLink} target='_blank' href="https://uniso.br/home">@Uniso University</Link> and founded <Link as={NextLink} target='_blank' href="https://d281.com.br">D281</Link> (my software house).
+            Enrolled in a Computer Engineering bachelor&apos;s program and intern as a Software Developer at <Link as={NextLink} target='_blank' href="https://markstudioshub.com/">@Mark Studios</Link>.
           </StorySection>
       </Section>
       <Section delay={0.3}>
@@ -132,14 +120,14 @@ const Page = () => {
           Tech Stack
           </Heading>
           <Bio>
-          JavaScript, Typescript, React, React-Native, Next, Node, Express, Jest, Cypress, Tailwind, Chakra UI, CSS / SASS, Flutter, Godot Engine, .NET, Python, SQL
+          JavaScript, Typescript, React.JS, React Native, Next, Node.JS, Express.JS, Jest, Cypress, Tailwind, Chakra UI, CSS / SASS, Flutter, Godot Engine, .NET, Python, SQL
           </Bio>
       </Section>
       <Section delay={0.3}>
           <Heading as="h3" variant="section-title" >
             My Links
           </Heading>
-          <List>
+          <List style={{flexDirection: 'row', display: 'block'}}>
             <ListItem mb={2}>
               <Link href='https://github.com/devpedrofurquim' target='_blank'>
                 <Button variant="ghost" colorScheme='blue' leftIcon={<IoLogoGithub/>}>@devpedrofurquim</Button>
@@ -162,4 +150,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default Page;
