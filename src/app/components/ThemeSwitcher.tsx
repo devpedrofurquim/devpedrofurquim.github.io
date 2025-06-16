@@ -2,9 +2,11 @@
 
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import { Moon } from "@deemlol/next-icons";
+import { Sun } from "@deemlol/next-icons";
 
 
-export default function ThemeSwitch() {
+const ThemeSwitcher = () => {
     const { resolvedTheme, setTheme } = useTheme()
     const [mounted, setMounted] = useState(false)
 
@@ -15,10 +17,16 @@ export default function ThemeSwitch() {
 
     return (
         <button
+            className="cursor-pointer hover:bg-gray-300 w-10 h-10 justify-center items-center mx-auto flex rounded-md"
             onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-            className="ml-4 px-3 py-1 rounded bg-gray-300 dark:bg-gray-700 text-black dark:text-white"
         >
-            {resolvedTheme === 'dark' ? '☀️ Light' : '🌙 Dark'}
+            {resolvedTheme === 'dark' ? (
+                <Sun size={24} />
+            ) : (
+                <Moon size={24} />
+            )}
         </button>
     )
 }
+
+export default ThemeSwitcher;
