@@ -28,11 +28,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased justify-center items-center mx-auto max-w-4xl m-4`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased justify-center items-center mx-auto max-w-4xl m-4 grid-cols-1 grid gap-4`}
       >
         <Providers>
           <Navbar />
-          {children}
+          <div className="px-4">
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

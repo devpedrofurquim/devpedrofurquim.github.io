@@ -5,6 +5,9 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { Github, Menu } from '@deemlol/next-icons'
 import ThemeSwitch from './ThemeSwitcher'
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
+
 
 const navItems = [
     { href: '/works', label: 'Works', icon: null },
@@ -16,12 +19,17 @@ const navItems = [
 export default function Navbar() {
     const pathname = usePathname()
     const [menuOpen, setMenuOpen] = useState(false)
+    const { theme } = useTheme();
+
+
+    const backgroundClass =
+        theme === 'dark' ? 'bg-gray-800' : 'bg-gray-300';
 
     return (
-        <nav className="flex justify-around items-center bg-transparent relative">
+        <nav className={`flex justify-between items-center px-4 py-3 ${backgroundClass}`}>
             {/* Logo */}
-            <Link href="/" className="text-lg text-primary">
-                Pedro Furquim
+            <Link href="/" className="flex items-center gap-4 text-lg text-primary">
+                <span className='font-semibold'>Pedro Furquim</span>
             </Link>
 
             {/* Desktop nav */}
