@@ -1,21 +1,122 @@
 @import "tailwindcss";
 
-/* Light theme (default) */
+/* Light theme (default) - Coffee Cozy */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #ff0000;
+  --background: #ffff;
+  --foreground: #000;
 }
 
-/* Dark theme via class (for next-themes) */
+/* Dark theme - Coffee Cozy */
 .dark {
-  --background: #171717;
-  --foreground: #ffffff;
-  --primary: #f00000;
+  --background: #000;
+  --foreground: #fff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Code block styling */
+.code-block-container {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e; /* Always dark background */
+}
+
+.dark .code-block-container {
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: #1e1e1e; /* Consistent dark background */
+}
+
+/* Override Shiki's default styles to fit your theme */
+.code-block-container pre {
+  margin: 0 !important;
+  padding: 1.5rem !important;
+  background: transparent !important;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.code-block-container code {
+  font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+}
+
+/* Ensure smooth transitions between themes */
+.code-block-container {
+  transition: opacity 0.3s ease;
+}
+
+/* Optional: Add copy button styling if you want to add that feature later */
+.code-block-container:hover .copy-button {
+  opacity: 1;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Required Shiki styles */
+.shiki {
+  font-family: 'Fira Code', 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  background-color: #1e1e1e !important; /* Always dark background */
+}
+
+.shiki .line {
+  white-space: pre;
+}
+
+/* Blog content link styling */
+.blog-content a {
+  color: #93c5fd; /* Blue-300 */
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.blog-content a:hover {
+  color: #60a5fa; /* Blue-400 on hover */
+  text-decoration: underline;
+}
+
+.blog-content a:focus {
+  outline: 2px solid #93c5fd; /* Blue-300 */
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Dark theme adjustments for links */
+.dark .blog-content a {
+  color: #93c5fd; /* Blue-300 - same in both themes for consistency */
+}
+
+.dark .blog-content a:hover {
+  color: #60a5fa; /* Blue-400 on hover */
+}
+
+.dark .blog-content a:focus {
+  outline-color: #93c5fd; /* Blue-300 */
 }
