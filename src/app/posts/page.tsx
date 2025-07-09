@@ -1,6 +1,5 @@
 'use client'
 
-import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -24,7 +23,6 @@ type Article = {
 
 
 export default function PostsPage() {
-    const { resolvedTheme } = useTheme()
     const [videos, setVideos] = useState<Video[]>([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
@@ -128,7 +126,7 @@ export default function PostsPage() {
                 ) : (
                     <div className="space-y-8">
                         {articles.map((article, index) => (
-                            <article key={article.id} className="group">
+                            <article key={`${article.id}-${index}`} className="group">
                                 <Link href={`/posts/${article.slug}`} className="block">
                                     <div className="relative overflow-hidden">
 
